@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="row">
+            <div class="col-md-7">
+                <video src="{{movie.flash}}" controls="controls" width="720" height="600" autoplay="autoplay">
+                    您的浏览器不支持 video 标签。
+                </video>
+            </div>
+            <div class="col-md-5">
+                <dl class="dl-horizontal">
+                    <dt>电影名字</dt>
+                    <dd>{{movie.title}}</dd>
+                    <dt>导演</dt>
+                    <dd>{{movie.doctor}}</dd>
+                    <dt>语言</dt>
+                    <dd>{{movie.language}}</dd>
+                    <dt>上映年分</dt>
+                    <dd>{{movie.year}}</dd>
+                    <dt>简介</dt>
+                    <dd>{{movie.summary}}</dd>
+                </dl>
+            </div>
+    </div>
+</div>

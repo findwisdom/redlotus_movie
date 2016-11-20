@@ -1,0 +1,40 @@
+<div class="container">
+    <div class="row">
+        <form action="/admin/movie/new" class="form-horizontal" method="post">
+            <input type="hidden" name="_id" value="{{movie._id}}">
+            <div class="form-group">
+                <label  class="col-sm-3" for="inputTitle">电影名</label>
+                <input type="text" id="inputTitle" class="form-control col-sm-9" name="title">
+            </div>
+            <div class="form-group">
+                <label  class="col-sm-3" for="inputDoctor">导演名</label>
+                <input type="text" id="inputDoctor" class="form-control col-sm-9" name="doctor">
+            </div>
+            <div class="form-group">
+                <label  class="col-sm-3" for="inputCountry">国家</label>
+                <input type="text" id="inputCountry" class="form-control col-sm-9" name="country">
+            </div>
+            <div class="form-group">
+                <label  class="col-sm-3" for="inputLanguage">语言</label>
+                <input type="text" id="inputLanguage" class="form-control col-sm-9" name="language">
+            </div>
+            <div class="form-group">
+                <label  class="col-sm-3" for="inputSummary">摘要</label>
+                <input type="text" id="inputSummary" class="form-control col-sm-9" name="summary">
+            </div>
+            <div class="form-group">
+                <label  class="col-sm-3" for="inputSummary">资源</label>
+                <input type="text" id="inputSummary" class="form-control col-sm-9" name="flash">
+            </div>
+            <div class="form-group">
+                <label  class="col-sm-3" for="inputSummary">年份</label>
+                <input type="text" id="inputSummary" class="form-control col-sm-9" name="year">
+            </div>
+            <div class="form-group">
+                <label  class="col-sm-3" for="inputSummary">演员</label>
+                <input type="text" id="inputSummary" class="form-control col-sm-9" name="poster">
+            </div>
+           <input type="submit" value="提交">
+        </form>
+    </div>
+</div>

@@ -1,0 +1,30 @@
+{
+  "name": "redlotue_movie",
+  "version": "1.0.0",
+  "description": "a cinema-online project",
+  "main": "redlotus_movie.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/findwisdom/redlotus_movie.git"
+  },
+  "keywords": [
+    "1q2w3e4r5t"
+  ],
+  "author": "findwisdom",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/findwisdom/redlotus_movie/issues"
+  },
+  "homepage": "https://github.com/findwisdom/redlotus_movie#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "express3-handlebars": "^0.5.2",
+    "jade": "^1.11.0",
+    "mongoose": "^4.6.5",
+    "underscore": "^1.8.3"
+  }
+}
