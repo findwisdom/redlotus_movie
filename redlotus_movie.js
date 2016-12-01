@@ -29,8 +29,9 @@ var handlebars = require('express3-handlebars')
 app.engine('handlebars', handlebars.engine);
 app.set('view engine', 'handlebars');
 
+
 //app.set('views',__dirname+'views');
-app.use(express.static(path.join(__dirname,'/bower_components')));
+app.use(express.static(path.join(__dirname,'/public')));
 
 app.use(bodyParser.urlencoded({ extended: false }))
 
@@ -54,14 +55,12 @@ app.get('/', function(req, res) {
 
 //detail page
 app.get('/movie/:id', function(req, res) {
-    var id = req.params.id;
-    console.log(id)
+    var id = req.body.id;
     Movie.findById(id,function(err,movie){
         res.render('pages/detail',{
             title:'imooc'+movie.title,
             movie:movie
         });
-        console.log(movie);
     });
 });
 
@@ -86,6 +85,7 @@ app.post('/admin/movie/new',function(req,res){
                 console.log(err)
             }
             _movie = _.extend(movie,movieObj);
+            console.log(_movie);
             _movie.save(function(err,movie){
                 if(err){
                     console.log(err);
@@ -121,13 +121,12 @@ app.get('/admin/movie', function(req, res) {
 });
 
 //admin updata movie
-
 app.get('/admin/update/:id',function(err,res){
     var id = req.params.id;
     if(id){
         Movie.findById(id, function (err,movie){
             res.render('page/admin',{
-                title:'redlotus 后台录入页',
+                title:'redlotus 后台更新页',
                 movie:movie
             })
         })
@@ -141,12 +140,43 @@ app.get('/admin/list', function(req, res) {
             console.log(err);
         }
         res.render('pages/list',{
-            title:'imooc',
-            movies:movies
+            movies:movies,
+            helpers: {
+                showtime: function(num, options) {
+                    var mouth = num.getMonth();
+                    var year = num.getFullYear();
+                    var date = num.getDate()
+                    var time = year + '-' + mouth + '-' + date;
+                    return time;
+                }
+            }
         });
     });
 });
 
+//list delete movie
+
+app.delete('/admin/list',function(err,req,res){
+   var id = req.body.id;
+    if(id){
+        if(err){
+            console.log(err)
+        }else {
+            console.log(id);
+            res.json({success:1})
+        }
+    }
+    /*if(id){
+        Movie.remove({_id: id}, function(err,movie){
+            if(err){
+                console.log(err)
+            }
+            else {
+                res.json({success:1})
+            }
+        })
+    }*/
+});
 app.use(function(err,req,res,next){
     console.error(err.stack);
     res.status(500);
