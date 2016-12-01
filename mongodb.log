@@ -1,0 +1,122 @@
+2016-12-01T16:12:13.336+0800 I CONTROL  [main] Hotfix KB2731284 or later update is not installed, will zero-out data files
+2016-12-01T16:12:13.337+0800 I CONTROL  [initandlisten] MongoDB starting : pid=7772 port=3000 dbpath=data\db 64-bit host=PC-20160513MOWO
+2016-12-01T16:12:13.337+0800 I CONTROL  [initandlisten] targetMinOS: Windows 7/Windows Server 2008 R2
+2016-12-01T16:12:13.337+0800 I CONTROL  [initandlisten] db version v3.2.10
+2016-12-01T16:12:13.337+0800 I CONTROL  [initandlisten] git version: 79d9b3ab5ce20f51c272b4411202710a082d0317
+2016-12-01T16:12:13.338+0800 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1t-fips  3 May 2016
+2016-12-01T16:12:13.338+0800 I CONTROL  [initandlisten] allocator: tcmalloc
+2016-12-01T16:12:13.338+0800 I CONTROL  [initandlisten] modules: none
+2016-12-01T16:12:13.338+0800 I CONTROL  [initandlisten] build environment:
+2016-12-01T16:12:13.338+0800 I CONTROL  [initandlisten]     distmod: 2008plus-ssl
+2016-12-01T16:12:13.338+0800 I CONTROL  [initandlisten]     distarch: x86_64
+2016-12-01T16:12:13.338+0800 I CONTROL  [initandlisten]     target_arch: x86_64
+2016-12-01T16:12:13.338+0800 I CONTROL  [initandlisten] options: { config: "conf/mongod.conf", net: { http: { RESTInterfaceEnabled: true, enabled: true }, port: 3000 }, storage: { dbPath: "data\db" }, systemLog: { destination: "file", path: "log\mongodb.log" } }
+2016-12-01T16:12:13.339+0800 I -        [initandlisten] Detected data files in data\db created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2016-12-01T16:12:13.340+0800 W -        [initandlisten] Detected unclean shutdown - data\db\mongod.lock is not empty.
+2016-12-01T16:12:13.340+0800 W STORAGE  [initandlisten] Recovering data from the last clean checkpoint.
+2016-12-01T16:12:13.340+0800 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=4G,session_max=20000,eviction=(threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=60,log_size=2GB),statistics_log=(wait=0),
+2016-12-01T16:12:14.260+0800 I NETWORK  [HostnameCanonicalizationWorker] Starting hostname canonicalization worker
+2016-12-01T16:12:14.260+0800 I NETWORK  [websvr] admin web console waiting for connections on port 4000
+2016-12-01T16:12:14.260+0800 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory 'data/db/diagnostic.data'
+2016-12-01T16:12:14.279+0800 I NETWORK  [initandlisten] waiting for connections on port 3000
+2016-12-01T16:12:15.028+0800 I FTDC     [ftdc] Unclean full-time diagnostic data capture shutdown detected, found interim file, some metrics may have been lost. OK
+2016-12-01T16:13:41.005+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:60029 #1 (1 connection now open)
+2016-12-01T16:16:58.602+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:60122 #2 (2 connections now open)
+2016-12-01T16:18:20.935+0800 I NETWORK  [conn2] end connection 127.0.0.1:60122 (1 connection now open)
+2016-12-01T16:18:22.526+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:60253 #3 (2 connections now open)
+2016-12-01T16:19:05.679+0800 I NETWORK  [conn3] end connection 127.0.0.1:60253 (1 connection now open)
+2016-12-01T16:19:07.447+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:60286 #4 (2 connections now open)
+2016-12-01T16:19:18.438+0800 I NETWORK  [conn4] end connection 127.0.0.1:60286 (1 connection now open)
+2016-12-01T16:19:18.740+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:60312 #5 (2 connections now open)
+2016-12-01T16:19:18.741+0800 I NETWORK  [conn5] end connection 127.0.0.1:60312 (1 connection now open)
+2016-12-01T16:19:18.994+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:60313 #6 (2 connections now open)
+2016-12-01T16:19:26.935+0800 I NETWORK  [conn6] end connection 127.0.0.1:60313 (1 connection now open)
+2016-12-01T16:19:27.228+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:60326 #7 (2 connections now open)
+2016-12-01T16:19:27.232+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:60327 #8 (3 connections now open)
+2016-12-01T16:19:27.235+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:60328 #9 (4 connections now open)
+2016-12-01T16:19:27.238+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:60329 #10 (5 connections now open)
+2016-12-01T16:19:27.241+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:60330 #11 (6 connections now open)
+2016-12-01T16:19:27.243+0800 I NETWORK  [conn7] end connection 127.0.0.1:60326 (5 connections now open)
+2016-12-01T16:19:27.353+0800 I NETWORK  [conn8] end connection 127.0.0.1:60327 (4 connections now open)
+2016-12-01T16:19:27.354+0800 I NETWORK  [conn9] end connection 127.0.0.1:60328 (3 connections now open)
+2016-12-01T16:19:27.355+0800 I NETWORK  [conn10] end connection 127.0.0.1:60329 (2 connections now open)
+2016-12-01T16:19:27.355+0800 I NETWORK  [conn11] end connection 127.0.0.1:60330 (1 connection now open)
+2016-12-01T16:19:27.661+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:60333 #12 (2 connections now open)
+2016-12-01T16:19:27.663+0800 I NETWORK  [conn12] end connection 127.0.0.1:60333 (1 connection now open)
+2016-12-01T16:19:27.913+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:60335 #13 (2 connections now open)
+2016-12-01T16:19:29.246+0800 I NETWORK  [conn13] end connection 127.0.0.1:60335 (1 connection now open)
+2016-12-01T16:19:29.552+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:60339 #14 (2 connections now open)
+2016-12-01T16:19:29.553+0800 I NETWORK  [conn14] end connection 127.0.0.1:60339 (1 connection now open)
+2016-12-01T16:19:29.804+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:60340 #15 (2 connections now open)
+2016-12-01T16:19:34.640+0800 I NETWORK  [conn15] end connection 127.0.0.1:60340 (1 connection now open)
+2016-12-01T16:19:34.946+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:60349 #16 (2 connections now open)
+2016-12-01T16:19:34.947+0800 I NETWORK  [conn16] end connection 127.0.0.1:60349 (1 connection now open)
+2016-12-01T16:19:35.198+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:60350 #17 (2 connections now open)
+2016-12-01T16:20:04.957+0800 I NETWORK  [conn17] end connection 127.0.0.1:60350 (1 connection now open)
+2016-12-01T16:20:05.263+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:60376 #18 (2 connections now open)
+2016-12-01T16:20:05.264+0800 I NETWORK  [conn18] end connection 127.0.0.1:60376 (1 connection now open)
+2016-12-01T16:20:05.514+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:60377 #19 (2 connections now open)
+2016-12-01T16:20:33.269+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:60403 #20 (3 connections now open)
+2016-12-01T16:20:34.738+0800 I NETWORK  [conn19] end connection 127.0.0.1:60377 (2 connections now open)
+2016-12-01T16:21:06.849+0800 I NETWORK  [conn20] end connection 127.0.0.1:60403 (1 connection now open)
+2016-12-01T16:21:08.266+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:60442 #21 (2 connections now open)
+2016-12-01T16:23:42.456+0800 I NETWORK  [conn21] end connection 127.0.0.1:60442 (1 connection now open)
+2016-12-01T16:23:44.067+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:60711 #22 (2 connections now open)
+2016-12-01T16:25:03.543+0800 I NETWORK  [conn22] end connection 127.0.0.1:60711 (1 connection now open)
+2016-12-01T16:25:05.428+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:60792 #23 (2 connections now open)
+2016-12-01T16:27:07.023+0800 I NETWORK  [conn23] end connection 127.0.0.1:60792 (1 connection now open)
+2016-12-01T16:27:09.837+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:60954 #24 (2 connections now open)
+2016-12-01T16:27:33.885+0800 I NETWORK  [conn24] end connection 127.0.0.1:60954 (1 connection now open)
+2016-12-01T16:28:36.680+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61027 #25 (2 connections now open)
+2016-12-01T16:37:50.584+0800 I NETWORK  [conn25] end connection 127.0.0.1:61027 (1 connection now open)
+2016-12-01T16:37:52.240+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61367 #26 (2 connections now open)
+2016-12-01T16:40:38.745+0800 I NETWORK  [conn26] end connection 127.0.0.1:61367 (1 connection now open)
+2016-12-01T16:41:36.852+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61617 #27 (2 connections now open)
+2016-12-01T16:45:43.537+0800 I NETWORK  [conn27] end connection 127.0.0.1:61617 (1 connection now open)
+2016-12-01T16:45:44.961+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61868 #28 (2 connections now open)
+2016-12-01T16:48:37.449+0800 I NETWORK  [conn28] end connection 127.0.0.1:61868 (1 connection now open)
+2016-12-01T16:48:37.755+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61989 #29 (2 connections now open)
+2016-12-01T16:48:37.758+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61990 #30 (3 connections now open)
+2016-12-01T16:48:37.762+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61991 #31 (4 connections now open)
+2016-12-01T16:48:37.765+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61992 #32 (5 connections now open)
+2016-12-01T16:48:37.768+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61993 #33 (6 connections now open)
+2016-12-01T16:48:37.770+0800 I NETWORK  [conn29] AssertionException handling request, closing client connection: 17132 SSL handshake received but server is started without SSL support
+2016-12-01T16:48:37.771+0800 I NETWORK  [conn30] AssertionException handling request, closing client connection: 17132 SSL handshake received but server is started without SSL support
+2016-12-01T16:48:37.773+0800 I NETWORK  [conn31] AssertionException handling request, closing client connection: 17132 SSL handshake received but server is started without SSL support
+2016-12-01T16:48:37.775+0800 I NETWORK  [conn32] AssertionException handling request, closing client connection: 17132 SSL handshake received but server is started without SSL support
+2016-12-01T16:48:37.776+0800 I NETWORK  [conn33] AssertionException handling request, closing client connection: 17132 SSL handshake received but server is started without SSL support
+2016-12-01T16:48:55.239+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:62002 #34 (2 connections now open)
+2016-12-01T16:50:04.980+0800 I NETWORK  [conn34] end connection 127.0.0.1:62002 (1 connection now open)
+2016-12-01T16:50:06.563+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:62062 #35 (2 connections now open)
+2016-12-01T16:54:22.897+0800 I NETWORK  [conn35] end connection 127.0.0.1:62062 (1 connection now open)
+2016-12-01T16:54:24.144+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:62321 #36 (2 connections now open)
+2016-12-01T16:56:57.484+0800 I NETWORK  [conn36] end connection 127.0.0.1:62321 (1 connection now open)
+2016-12-01T16:56:58.801+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:62425 #37 (2 connections now open)
+2016-12-01T16:59:51.977+0800 I NETWORK  [conn37] end connection 127.0.0.1:62425 (1 connection now open)
+2016-12-01T17:00:14.661+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:62549 #38 (2 connections now open)
+2016-12-01T17:00:38.020+0800 I NETWORK  [conn38] end connection 127.0.0.1:62549 (1 connection now open)
+2016-12-01T17:00:39.292+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:62579 #39 (2 connections now open)
+2016-12-01T17:01:08.510+0800 I NETWORK  [conn39] end connection 127.0.0.1:62579 (1 connection now open)
+2016-12-01T17:05:57.997+0800 I NETWORK  [conn1] end connection 127.0.0.1:60029 (0 connections now open)
+2016-12-01T17:05:58.953+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:62729 #40 (1 connection now open)
+2016-12-01T17:07:01.848+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:62758 #41 (2 connections now open)
+2016-12-01T17:08:31.258+0800 I NETWORK  [conn41] end connection 127.0.0.1:62758 (1 connection now open)
+2016-12-01T17:09:05.118+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:62849 #42 (2 connections now open)
+2016-12-01T17:51:59.897+0800 I NETWORK  [conn42] end connection 127.0.0.1:62849 (1 connection now open)
+2016-12-01T17:52:01.064+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:64630 #43 (2 connections now open)
+2016-12-01T17:53:05.891+0800 I NETWORK  [conn43] end connection 127.0.0.1:64630 (1 connection now open)
+2016-12-01T17:53:07.432+0800 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:64734 #44 (2 connections now open)
+2016-12-01T17:59:30.806+0800 I NETWORK  [conn44] end connection 127.0.0.1:64734 (1 connection now open)
+2016-12-01T17:59:36.099+0800 I NETWORK  [conn40] end connection 127.0.0.1:62729 (0 connections now open)
+2016-12-01T17:59:38.098+0800 I CONTROL  [thread1] CTRL_CLOSE_EVENT signal
+2016-12-01T17:59:38.098+0800 I CONTROL  [consoleTerminate] got CTRL_CLOSE_EVENT, will terminate after current cmd ends
+2016-12-01T17:59:38.098+0800 I FTDC     [consoleTerminate] Shutting down full-time diagnostic data capture
+2016-12-01T17:59:38.099+0800 I CONTROL  [consoleTerminate] now exiting
+2016-12-01T17:59:38.099+0800 I NETWORK  [consoleTerminate] shutdown: going to close listening sockets...
+2016-12-01T17:59:38.099+0800 I NETWORK  [consoleTerminate] closing listening socket: 428
+2016-12-01T17:59:38.099+0800 I NETWORK  [consoleTerminate] closing listening socket: 432
+2016-12-01T17:59:38.099+0800 I NETWORK  [consoleTerminate] shutdown: going to flush diaglog...
+2016-12-01T17:59:38.100+0800 I NETWORK  [consoleTerminate] shutdown: going to close sockets...
+2016-12-01T17:59:38.100+0800 I STORAGE  [consoleTerminate] WiredTigerKVEngine shutting down
+2016-12-01T17:59:38.322+0800 I STORAGE  [consoleTerminate] shutdown: removing fs lock...
+2016-12-01T17:59:38.322+0800 I CONTROL  [consoleTerminate] dbexit:  rc: 12
